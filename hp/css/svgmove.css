@@ -1,0 +1,37 @@
+.log-position {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  /*heightの値を設定するときに100%とする場合、親要素<html>、<body>要素でもheightを設定しないといけない*/
+  height: 100vh;
+  background: #000000;
+}
+
+
+#svg {
+  overflow: visible;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  width: 1300px;
+  height: 200px;
+  margin: -120px 0 0 -500px;
+  background: red;
+}
+#鬼 {
+  background: #ffffff;
+
+}
+/*
+#鬼 #svg1,
+#svg2,
+#svg3,
+#svg4 {
+  fill: url("#g1");
+}*/
