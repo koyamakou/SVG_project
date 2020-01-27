@@ -8,8 +8,7 @@
   background: #000000;
 }
 
-
-#svg {
+/*#svg {
   overflow: visible;
   display: flex;
   flex-shrink: 0;
@@ -23,10 +22,10 @@
   height: 200px;
   margin: -120px 0 0 -500px;
   background: red;
-}
-#鬼 {
-  background: #ffffff;
+}*/
+#SVG_Data {
 
+  background: #ffffff;
 }
 /*
 #鬼 #svg1,
