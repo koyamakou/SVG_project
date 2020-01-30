@@ -13,7 +13,7 @@
   </defs>
   <g id = "nuber1">
     <path class="svg"
-      fill="none" stroke="black" stroke-width="1"
+      fill="none" stroke="black" stroke-width="1" 
       d="M 573.39,517.44
       C 576.86,518.82 578.94,521.59 579.62,525.75
       580.32,527.84 579.98,529.57 578.59,530.95

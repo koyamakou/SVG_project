@@ -7,13 +7,15 @@ $(function(){
 		console.log('aaaaaaaaaaa');
 	});
 });
+var logoAnimationTL = anime.timeline({
+	autoplay: false,
+	easing: 'easeInOutQuint',
+	loop: true
+})
 
 var SvgAnime = function(childPath){
 	console.log('SvgAnime-始まり');
-	const logoAnimationTL = anime.timeline({
-    autoplay: false,
-    easing: 'easeInOutQuint',
-  })
+	logoAnimationTL
 	.add({
 		targets: childPath[0],
 		strokeDashoffset: [anime.setDashoffset, childPath[0].getTotalLength()*2],
@@ -39,7 +41,36 @@ var SvgAnime = function(childPath){
 		duration: 1000,
 		loop: false,
 	},'-=600');
-
 	console.log('SvgAnime-終わり');
+	logoAnimationTL.play();
+
+	let animeId = [
+		{Id: childPath[0], duration: 1100, second: '-=200'},
+		{Id: childPath[1], duration: 900, second: '-=600'},
+		{Id: childPath[2], duration: 700, second: '-=400'},
+		{Id: childPath[3], duration: 500, second: '-=400'}
+	]
+
+	animeId.forEach(function(Path, index) {
+		logoAnimationTL
+		.add({
+			targets: Path.Id,
+			fill: {
+				value: ['#fffff', '#FF0000'],
+				duration: Path.duration,
+				easing:'easeInSine'
+			}
+		},Path.second)
+	});
+
+
+	logoAnimationTL
+	.add({
+		targets: childPath,
+		duration: 850,
+		delay: 350,
+		opacity: 0,
+		easing: 'easeInCubic'
+	});
 	logoAnimationTL.play();
 }
