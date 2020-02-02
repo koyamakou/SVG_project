@@ -2,18 +2,29 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
 "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
-<svg xmlns="http://www.w3.org/2000/svg"
-  width="6.4in" height="3.6in"
-  viewBox="0 0 1920 1080" >
+<svg id = 'svg_root' xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1920 1080" stroke="#ff0000" fill="url(#g2)" fill-opacity="0">
   <defs>
-    <linearGradient id="g1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="black"/>
-      <stop offset="1" stop-color="red"/>
+    <!--SVGの色をグラデーションとする-->
+    <linearGradient id="g2" gradientUnits="objectBoundingBox" gradientTransform="rotate(50)">
+      <stop offset="70%" stop-color="red"/>
+      <stop offset="90%" stop-color="black"/>
     </linearGradient>
+    <!--グラデーションを動かす
+        <linearGradient id="bearGratient" x1="100%" y1="100%">
+        <stop offset="0%" stop-color="#69d2ff" stop-opacity=".5">
+            <animate attributeName="stop-color" values="#69d2ff;#71dca7;#ffd458;#ffa7de;#69d2ff" dur="14s" repeatCount="indefinite" />
+        </stop>
+        <stop offset="100%" stop-color="#69d2ff" stop-opacity=".5">
+            <animate attributeName="stop-color" values="#69d2ff;#71dca7;#ffd458;#ffa7de;#69d2ff" dur="14s" repeatCount="indefinite" />
+            <animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s" repeatCount="indefinite" />
+        </stop>
+    </linearGradient>-->
+
   </defs>
   <g id = "nuber1">
     <path class="svg"
-      fill="none" stroke="black" stroke-width="1" 
+      fill="red" stroke-width="1"
       d="M 573.39,517.44
       C 576.86,518.82 578.94,521.59 579.62,525.75
       580.32,527.84 579.98,529.57 578.59,530.95
@@ -118,8 +129,7 @@
     </g>
     <g id = "nuber2">
       <path class="svg"
-        fill="none"
-        stroke="black" stroke-width="1"
+        fill="url(#g2)" stroke-width="1"
         d="M 841.92,405.27
         C 844.00,423.96 846.08,440.24 848.16,454.09
         853.70,452.71 858.20,449.94 861.67,445.78
@@ -224,8 +234,7 @@
       </g>
       <g id = "nuber3">
         <path class="svg"
-          fill="none"
-          stroke="black" stroke-width="1"
+          fill="#000000" stroke-width="1"
           d="M 1156.70,464.53
           C 1168.47,476.30 1174.36,492.58 1174.36,513.36
           1174.36,529.98 1167.78,545.57 1154.62,560.12
@@ -256,8 +265,7 @@
         </g>
         <g id = "nuber4">
           <path class="svg"
-            fill="none"
-            stroke="black" stroke-width="1"
+            fill="#000000" stroke-width="1"
             d="M 1444.25,419.92
             C 1447.71,422.01 1448.40,424.43 1446.33,427.20
             1444.94,429.28 1443.55,431.36 1442.17,433.44

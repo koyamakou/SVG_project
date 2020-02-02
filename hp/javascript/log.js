@@ -1,5 +1,6 @@
 $(function(){
-	$("#SVG_Data").load('picture/鬼.svg svg', function(){
+	/*SVGデータを非同期で読み込み*/
+	$("#SVG_Data").load('picture/op_picture.svg svg', function(){
 		let svgId;
 		svgId = document.querySelectorAll('.svg');
 		SvgAnime(svgId);
@@ -15,6 +16,7 @@ var logoAnimationTL = anime.timeline({
 
 var SvgAnime = function(childPath){
 	console.log('SvgAnime-始まり');
+	/*SVGを視覚化(文字が手書き風に出力される)*/
 	logoAnimationTL
 	.add({
 		targets: childPath[0],
@@ -44,26 +46,35 @@ var SvgAnime = function(childPath){
 	console.log('SvgAnime-終わり');
 	logoAnimationTL.play();
 
+/*各要素のdurationや秒数の指定＆配列化*/
+console.log(childPath[0]);
 	let animeId = [
+		//{Id: childPath[0], duration: 1100},
 		{Id: childPath[0], duration: 1100, second: '-=200'},
-		{Id: childPath[1], duration: 900, second: '-=600'},
-		{Id: childPath[2], duration: 700, second: '-=400'},
-		{Id: childPath[3], duration: 500, second: '-=400'}
+		{Id: childPath[1], duration: 900, second: '-=900'},
+		{Id: childPath[2], duration: 700, second: '-=550'},
+		{Id: childPath[3], duration: 500, second: '-=350'}
 	]
 
+/*配列を回して、fill-opacityを1に変更。これにより、あらかじめ
+　指定していた色が浮き上がる*/
 	animeId.forEach(function(Path, index) {
 		logoAnimationTL
 		.add({
 			targets: Path.Id,
-			fill: {
-				value: ['#fffff', '#FF0000'],
+		/*	fill: {
+				//value: ['#ffffff', '#ff0000'],
+				value: ['#000000','url(#g1)'],
 				duration: Path.duration,
-				easing:'easeInSine'
-			}
+				easing:'easeInSine',
+			},*/
+			duration: Path.duration,
+			easing:'easeInSine',
+			fillOpacity: 1
 		},Path.second)
 	});
 
-
+/*opacityを使って不可視化*/
 	logoAnimationTL
 	.add({
 		targets: childPath,
