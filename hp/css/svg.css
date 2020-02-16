@@ -1,0 +1,7 @@
+#SVG_Data {
+  position: absolute;
+  top: calc(50% - 30vmin);
+  left: calc(50% - 45vmin);
+  width: 100vmin;
+  height: 100vmin;
+}

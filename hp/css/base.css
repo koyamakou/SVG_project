@@ -14,13 +14,6 @@
   height: 100%;
   overflow: hidden;
 }
-#SVG_Data {
-  position: absolute;
-  top: calc(50% - 30vmin);
-  left: calc(50% - 45vmin);
-  width: 100vmin;
-  height: 100vmin;
-}
 /*#svg {
   overflow: visible;
   display: flex;
