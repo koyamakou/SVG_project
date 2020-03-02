@@ -1,0 +1,373 @@
+.animetion {
+  background-image: url("/picture/wa.jpg");
+}
+
+
+.back_picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.first_start {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+ animation: invisibleSignalStart  3.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+
+.first_start::before {
+  content : '';
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-color: #14001a;
+  clip-path: inset( 0% 0% 0% 50%);
+  animation: signalStartRignt 1.5s  cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
+}
+
+.first_start::after {
+  content : '';
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-color: #14001a;
+  clip-path: inset( 0% 50% 0% 0%);
+  animation: signalStartLeft 1.5s  cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
+}
+
+.picture_1 {
+  position: absolute;
+  top: calc(50% - 45vmin);
+  left: calc(50% - 32vmin);
+  width: 64vmin;
+  height: 90vmin;
+  background-image: url("/picture/background/2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9000;
+  background-size: contain;
+  animation: byeShutter1  1.6s 1.5s forwards;
+}
+
+.picture_1::before{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    margin:auto;
+    background-image: url("/picture/background/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    clip-path: polygon(0% 0%, 51% 0%, 51% 100%, 0% 100%);
+    animation: shutterOpen1_before 1.3s 1.5s  forwards;
+}
+
+.picture_1::after{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    margin:auto;
+    background-image: url("/picture/background/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+    animation: shutterOpen1_after 1.3s 1.5s  forwards;
+}
+
+
+.picture_2 {
+  position: absolute;
+  top: calc(50% - 45vmin);
+  left: calc(50% - 32vmin);
+  width: 64vmin;
+  height: 90vmin;
+  background-image: url("/picture/background/3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 8000;
+  animation: byeShutter2  1.6s 3.0s forwards;
+}
+
+.picture_2::before{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    margin:auto;
+    background-image: url("/picture/background/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+    animation: shutterOpen2_before 1.3s 3.0s forwards;
+}
+
+.picture_2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-image: url("/picture/background/2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+  animation: shutterOpen2_after 1.3s 3.0s forwards;
+}
+
+
+
+.picture_3 {
+  position: absolute;
+  top: calc(50% - 45vmin);
+  left: calc(50% - 32vmin);
+  width: 64vmin;
+  height: 90vmin;
+  background-image: url("/picture/background/4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index:7000;
+  animation: byeShutter3 1.6s 4.5s forwards;
+}
+
+.picture_3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-image: url("/picture/background/3.jpg");
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: shutterOpen3_before 2.0s 4.5s forwards;
+}
+
+.picture_3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-image: url("/picture/background/3.jpg");
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: shutterOpen3_after 2.0s 4.5s forwards;
+}
+
+
+.picture_4 {
+  position: absolute;
+  top: calc(50% - 45vmin);
+  left: calc(50% - 32vmin);
+  width: 64vmin;
+  height: 90vmin;
+  background-image: url("/picture/background/5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index:6000;
+  animation: byeShutter4  1.6s 6.0s forwards;
+}
+
+
+.picture_4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-image: url("/picture/background/4.jpg");
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: shutterOpen4_before 2.0s 6.0s forwards;
+}
+
+.picture_4::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-image: url("/picture/background/4.jpg");
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: shutterOpen4_after 2.0s 6.0s forwards;
+}
+
+.picture_5 {
+  position: absolute;
+  top: calc(50% - 45vmin);
+  left: calc(50% - 32vmin);
+  width: 64vmin;
+  height: 90vmin;
+  background-image: url("/picture/background/6.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index:5000;
+  animation:  byeShutter5  1.6s 7.5s forwards;
+}
+
+
+.picture_5::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-image: url("/picture/background/5.jpg");
+  clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: shutterOpen5_before 2.0s 7.5s forwards;
+}
+
+.picture_5::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-image: url("/picture/background/5.jpg");
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: shutterOpen5_after 2.0s 7.5s forwards;
+}
+
+.picture_6 {
+  position: absolute;
+  top: calc(50% - 45vmin);
+  left: calc(50% - 32vmin);
+  width: 64vmin;
+  height: 90vmin;
+  background-image: url("/picture/background/7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index:4000;
+  animation:  byeShutter6  1.6s 9.0s forwards;
+}
+
+
+.picture_6::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-image: url("/picture/background/6.jpg");
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: shutterOpen6_before 2.0s 9.0s forwards;
+}
+
+.picture_6::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-image: url("/picture/background/6.jpg");
+  clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: shutterOpen6_after 2.0s 9.0s forwards;
+}
+
+
+.picture_7 {
+  position: absolute;
+  top: calc(50% - 45vmin);
+  left: calc(50% - 32vmin);
+  width: 64vmin;
+  height: 90vmin;
+  background-image: url("/picture/background/7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 3000;
+}
+
+/*
+.last {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 100px;
+}*/
+
+
+
+.last {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*
+.picture_7 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/picture/background/7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index:9993;
+}
+.picture_8 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/picture/background/8.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index:9992;
+}
+*/

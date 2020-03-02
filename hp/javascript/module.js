@@ -9,7 +9,7 @@ export const SvgAnime = function(childPath){
     loop: false
   })
   /*SVGを視覚化(文字が手書き風に出力される)*/
-  /*logoAnimationTL
+  logoAnimationTL
   .add({
     targets: childPath[0],
     strokeDashoffset: [anime.setDashoffset, childPath[0].getTotalLength()*2],
@@ -34,7 +34,7 @@ export const SvgAnime = function(childPath){
   logoAnimationTL.play();
 
   /*各要素のdurationや秒数の指定＆配列化*/
-/*  let animeId = [
+  let animeId = [
     //{Id: childPath[0], duration: 1100},
     {Id: childPath[0], duration: 1100, second: '-=200'},
     {Id: childPath[1], duration: 900, second: '-=900'},
@@ -44,7 +44,7 @@ export const SvgAnime = function(childPath){
 
   /*配列を回して、fill-opacityを1に変更。これにより、あらかじめ
   指定していた色が浮き上がる*/
-  /*animeId.forEach(function(Path, index) {
+  animeId.forEach(function(Path, index) {
     logoAnimationTL
     .add({
       targets: Path.Id,
@@ -54,14 +54,14 @@ export const SvgAnime = function(childPath){
       duration: Path.duration,
       easing:'easeInSine',
     },*/
-/*    duration: Path.duration,
+    duration: Path.duration,
     easing:'easeInSine',
     fillOpacity: 1,
   },Path.second)
 });
 /*opacityを使って不可視化*/
 logoAnimationTL
-/*.add({
+.add({
   targets: childPath,
   duration: 850,
   delay: 350,
@@ -91,13 +91,20 @@ logoAnimationTL
     fragment.appendChild(createChildDiv);
 
     // 画像表示用div作成
-    for (var i = 1; i < 8; i++) {
+    for (var i = 1; i <= 8; i++) {
       createChildDiv = document.createElement('div');
       createChildDiv.className = 'animetion picture_' + i;
       fragment.appendChild(createChildDiv);
-  };
+    };
+    // シャッターアニメーション終了用div
+    createChildDiv = document.createElement('div');
+    createChildDiv.className = 'animetion last';
+    fragment.appendChild(createChildDiv);
+
     document.querySelector('.back_picture').appendChild(fragment);
   }
+
+
 }, '-=650');
 /*
 .add ({
