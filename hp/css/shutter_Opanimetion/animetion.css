@@ -1,0 +1,218 @@
+/* シャッターアニメーションの開始合図*/
+@keyframes invisibleSignalStart{
+  15% {
+    opacity:1;
+  }
+  70%,
+  100% {
+    opacity:0;
+    z-index:9000;
+  }
+}
+
+@keyframes signalStartRignt {
+  50%,
+  100% {
+      clip-path: inset( 0% 0% 0% 100%);
+  }
+}
+@keyframes signalStartLeft {
+  50%,
+  100% {
+      clip-path: inset( 0% 100% 0% 0%);
+  }
+}
+
+/*胡蝶さんから順番に登場アニメーション*/
+
+
+@keyframes byeShutter1{
+  70%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+    z-index:8000;
+  }
+}
+
+@keyframes byeShutter2{
+  70%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+    z-index:7000;
+  }
+}
+
+@keyframes byeShutter3{
+  70%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+    z-index:6000;
+  }
+}
+
+@keyframes byeShutter4{
+  70%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+    z-index:5000;
+  }
+}
+
+@keyframes byeShutter5{
+  70%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+    z-index:4000;
+  }
+}
+
+@keyframes byeShutter6{
+  70%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+    z-index:3000;
+  }
+}
+
+@keyframes shutterOpen1_before{
+  0% {
+    clip-path: polygon(0% 0%, 51% 0%, 51% 100%, 0% 100%);
+  }
+  80%,
+  100% {
+    clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
+  }
+}
+
+@keyframes shutterOpen1_after{
+  0% {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+  }
+  80%,
+  100% {
+    clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
+  }
+}
+
+@keyframes shutterOpen2_before{
+  0% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+  }
+  80%,
+  100% {
+    clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
+  }
+}
+
+@keyframes shutterOpen2_after {
+  0% {
+    clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+  }
+  80%,
+  100% {
+    clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
+  }
+}
+
+
+@keyframes shutterOpen3_before{
+  0% {
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+  }
+  80%,
+  100% {
+    clip-path: polygon(0% 0%, 0% 0%, 0% 0%);
+  }
+}
+
+@keyframes shutterOpen3_after {
+  0% {
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+  }
+  80%,
+  100% {
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+  }
+}
+
+@keyframes shutterOpen4_before{
+  0% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+  }
+  80%,
+  100% {
+    clip-path: polygon(100% 0%, 100% 0%, 100% 0%);
+  }
+}
+
+@keyframes shutterOpen4_after {
+  0% {
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+  }
+  80%,
+  100% {
+    clip-path: polygon(0% 100%, 0% 100%, 0% 100%);
+  }
+}
+
+@keyframes shutterOpen5_before {
+  0% {
+    clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+  }
+  50%,
+  100% {
+    clip-path: polygon(0% 0%, 50% 0%, 50% 0%, 0% 0%);
+  }
+}
+
+@keyframes shutterOpen5_after {
+  0% {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+  }
+  50%,
+  100% {
+    clip-path: polygon(50% 100%, 100% 100%, 100% 100%, 50% 100%);
+  }
+}
+
+@keyframes shutterOpen6_before {
+  0% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+  }
+  40%,
+  100% {
+    clip-path: polygon(100% 0%, 100% 0%, 100% 50%, 100% 50%);
+  }
+}
+
+@keyframes shutterOpen6_after {
+  0% {
+    clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+  }
+  70%,
+  100% {
+    clip-path: polygon(100% 50%, 100% 50%, 100% 100%, 100% 100%);
+  }
+}
+/*
+@keyframes contentScale {
+  70% {
+    transform: perspective(800px) scale(0.9) rotateX(15deg);
+  }
+  100% {
+    transform: perspective(800px) scale(1) rotateX(0);
+  }
+}
+*/
