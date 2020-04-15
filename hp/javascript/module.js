@@ -3,7 +3,7 @@
 export const SvgAnime = function(childPath){
   console.log('SvgAnime-始まり');
   /*timelineの宣言*/
-  var logoAnimationTL = anime.timeline({
+  const logoAnimationTL = anime.timeline({
     autoplay: false,
     easing: 'easeInOutQuint',
     loop: false
@@ -105,11 +105,11 @@ logoAnimationTL
   }
 
 
-}, '-=650');
-/*
+}, '-=650')
+
+/*アニメーション終了後の処理*/
 .add ({
   complete: function(){
-
     // cssAnimetionのオープニングシャッター用のdiv作成
     let fragment = document.createDocumentFragment();
     let creatediv;
@@ -120,7 +120,7 @@ logoAnimationTL
   };
     document.querySelector('.picture_1').appendChild(fragment);
   }
-});*/
+});
 
 logoAnimationTL.play();
 }
