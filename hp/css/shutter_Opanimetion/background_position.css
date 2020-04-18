@@ -1,5 +1,5 @@
 .animetion {
-  background-image: url("/picture/wa.jpg");
+  background-image: url("./picture/wa.jpg");
 }
 
 
@@ -54,7 +54,7 @@
   left: calc(50% - 32vmin);
   width: 64vmin;
   height: 90vmin;
-  background-image: url("/picture/background/2.jpg");
+  background-image: url("./picture/background/2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   z-index: 9000;
@@ -70,7 +70,7 @@
     right: 0;
     bottom:0;
     margin:auto;
-    background-image: url("/picture/background/1.jpg");
+    background-image: url("./picture/background/1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -86,7 +86,7 @@
     right: 0;
     bottom:0;
     margin:auto;
-    background-image: url("/picture/background/1.jpg");
+    background-image: url("./picture/background/1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -101,7 +101,7 @@
   left: calc(50% - 32vmin);
   width: 64vmin;
   height: 90vmin;
-  background-image: url("/picture/background/3.jpg");
+  background-image: url("./picture/background/3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -117,7 +117,7 @@
     right: 0;
     bottom:0;
     margin:auto;
-    background-image: url("/picture/background/2.jpg");
+    background-image: url("./picture/background/2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -132,7 +132,7 @@
   left: 0;
   right: 0;
   bottom:0;
-  background-image: url("/picture/background/2.jpg");
+  background-image: url("./picture/background/2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -148,7 +148,7 @@
   left: calc(50% - 32vmin);
   width: 64vmin;
   height: 90vmin;
-  background-image: url("/picture/background/4.jpg");
+  background-image: url("./picture/background/4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -163,7 +163,7 @@
   left: 0;
   right: 0;
   bottom:0;
-  background-image: url("/picture/background/3.jpg");
+  background-image: url("./picture/background/3.jpg");
   clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
   background-repeat: no-repeat;
   background-position: center;
@@ -178,7 +178,7 @@
   left: 0;
   right: 0;
   bottom:0;
-  background-image: url("/picture/background/3.jpg");
+  background-image: url("./picture/background/3.jpg");
   clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
   background-repeat: no-repeat;
   background-position: center;
@@ -193,7 +193,7 @@
   left: calc(50% - 32vmin);
   width: 64vmin;
   height: 90vmin;
-  background-image: url("/picture/background/5.jpg");
+  background-image: url("./picture/background/5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -209,7 +209,7 @@
   left: 0;
   right: 0;
   bottom:0;
-  background-image: url("/picture/background/4.jpg");
+  background-image: url("./picture/background/4.jpg");
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
   background-repeat: no-repeat;
   background-position: center;
@@ -224,7 +224,7 @@
   left: 0;
   right: 0;
   bottom:0;
-  background-image: url("/picture/background/4.jpg");
+  background-image: url("./picture/background/4.jpg");
   clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
   background-repeat: no-repeat;
   background-position: center;
@@ -238,7 +238,7 @@
   left: calc(50% - 32vmin);
   width: 64vmin;
   height: 90vmin;
-  background-image: url("/picture/background/6.jpg");
+  background-image: url("./picture/background/6.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -254,7 +254,7 @@
   left: 0;
   right: 0;
   bottom:0;
-  background-image: url("/picture/background/5.jpg");
+  background-image: url("./picture/background/5.jpg");
   clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
   background-repeat: no-repeat;
   background-position: center;
@@ -269,7 +269,7 @@
   left: 0;
   right: 0;
   bottom:0;
-  background-image: url("/picture/background/5.jpg");
+  background-image: url("./picture/background/5.jpg");
   clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
   background-repeat: no-repeat;
   background-position: center;
@@ -283,7 +283,7 @@
   left: calc(50% - 32vmin);
   width: 64vmin;
   height: 90vmin;
-  background-image: url("/picture/background/7.jpg");
+  background-image: url("./picture/background/7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -299,7 +299,7 @@
   left: 0;
   right: 0;
   bottom:0;
-  background-image: url("/picture/background/6.jpg");
+  background-image: url("./picture/background/6.jpg");
   clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
   background-repeat: no-repeat;
   background-position: center;
@@ -314,7 +314,7 @@
   left: 0;
   right: 0;
   bottom:0;
-  background-image: url("/picture/background/6.jpg");
+  background-image: url("./picture/background/6.jpg");
   clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
   background-repeat: no-repeat;
   background-position: center;
@@ -329,7 +329,7 @@
   left: calc(50% - 32vmin);
   width: 64vmin;
   height: 90vmin;
-  background-image: url("/picture/background/7.jpg");
+  background-image: url("./picture/background/7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
