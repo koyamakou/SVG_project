@@ -1,6 +1,9 @@
+import {cleateDom, downLoad} from './collapse.js';
+import {animetion} from './CrumbleImg.js';
+
 /**SVGを動かす*/
 
-export const SvgAnime = function(childPath){
+export async function SvgAnime(childPath){
   console.log('SvgAnime-始まり');
   /*timelineの宣言*/
   const logoAnimationTL = anime.timeline({
@@ -91,7 +94,7 @@ logoAnimationTL
     fragment.appendChild(createChildDiv);
 
     // 画像表示用div作成
-    for (var i = 1; i <= 8; i++) {
+    for (var i = 1; i < 8; i++) {
       createChildDiv = document.createElement('div');
       createChildDiv.className = 'animetion picture_' + i;
       fragment.appendChild(createChildDiv);
@@ -102,6 +105,8 @@ logoAnimationTL
     fragment.appendChild(createChildDiv);
 
     document.querySelector('.back_picture').appendChild(fragment);
+
+
   }
 
 
@@ -119,6 +124,35 @@ logoAnimationTL
       fragment.appendChild(creatediv);
   };
     document.querySelector('.picture_1').appendChild(fragment);
+    console.log('ねこ');
+
+
+
+    /**********CSSアニメーション終了後**************/
+    var collapse = document.querySelector('.picture_7');
+
+    collapse.addEventListener('animationend', function(){
+      /*要素の削除*/
+      let obj = document.querySelector('.op_animetion');
+      obj.remove();
+
+      /*divの作成*/
+      let divId = document.createElement('div');
+      divId.id = 'collapse';
+      document.querySelector('#root').appendChild(divId);
+
+      divId = document.createElement('div');
+      divId.id = 'canvas';
+      document.querySelector('#collapse').appendChild(divId);
+
+    	//即時関数
+    	//画像崩壊アニメーション
+    	(async function() {
+    	  cleateDom();
+    	  await downLoad();
+    	  animetion();
+    	})();
+    });
   }
 });
 

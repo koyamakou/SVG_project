@@ -334,6 +334,7 @@
   background-position: center;
   background-size: contain;
   z-index: 3000;
+  animation: byeShutter7 1.6s 9.5s forwards;
 }
 
 /*

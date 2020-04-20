@@ -24,8 +24,7 @@
 }
 
 /*胡蝶さんから順番に登場アニメーション*/
-
-
+/* 画像が薄くなり消える*/
 @keyframes byeShutter1{
   70%{
     opacity:1;
@@ -86,6 +85,18 @@
   }
 }
 
+@keyframes byeShutter7{
+  70%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+    z-index:2000;
+  }
+}
+
+
+/*画像が動く*/
 @keyframes shutterOpen1_before{
   0% {
     clip-path: polygon(0% 0%, 51% 0%, 51% 100%, 0% 100%);
@@ -206,6 +217,18 @@
     clip-path: polygon(100% 50%, 100% 50%, 100% 100%, 100% 100%);
   }
 }
+
+/*
+@keyframes shutterClose7 {
+  0% {
+    opacity:1;
+  }
+  70%,
+  100% {
+    clip-path: polygon(100% 50%, 100% 50%, 100% 100%, 100% 100%);
+  }
+}
+
 /*
 @keyframes contentScale {
   70% {
